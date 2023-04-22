@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/*button animations*/
+@keyframes slideR {
+  0% {
+    margin-right: 50%;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    margin-right: -50%;
+    opacity: 1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+ @keyframes slideL {
+  0% {
+    margin-right: -50%;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    margin-right: 50%;
+    opacity: 1;
+  }
+ }
+
+ /*mobile layout with no scrollbars and resize feature*/
+ @media screen and (max-width: 640px) {
+  html::-webkit-scrollbar, #textEditor::-webkit-scrollbar {
+    display: none
+  }
+  #textEditor {
+    resize: none
+  }
+ }
