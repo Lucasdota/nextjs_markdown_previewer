@@ -2,12 +2,12 @@
 
 A markdown HTML previewer flavored with github markdown body.
 
-Details:
+Features:
 
  - Next.js
  - TailwindCSS
  - Font Awesome Icons
- - Accessibility techs
+ - Accessibility Guideline Followed
  - Dark/Light Mode
  - Responsive Design
  - Expand Button
