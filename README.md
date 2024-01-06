@@ -1,13 +1,15 @@
-[Markdown Previewer](https://nextjs-markdown-previewer.vercel.app/)
+## Markdown Previewer
 
-A markdown HTML previewer flavored with github markdown body.
+## A markdown HTML previewer flavored with github markdown body.
 
-Features:
+Main features:
 
- - Next.js
+ - Github markdown
  - TailwindCSS
  - Font Awesome Icons
  - Accessibility Guideline Followed
  - Dark/Light Mode
  - Responsive Design
  - Expand Button
+
+Website: [click here](https://nextjs-markdown-previewer.vercel.app/)
